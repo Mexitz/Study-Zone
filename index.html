@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>منطقة المذاكرة</title>
+</head>
+<body id = "Body1">
+
+    <div class="message">الصفحة فالوقت الحالي مخصصة لأجهزة الكمبيوتر فقط</div>
+    <div class="content">
+    <nav id ="NAV1">
+        <h1 id = "MainT">منطقة المذاكرة</h1>
+    </nav>
+    <div id ="PicFrame">
+        <h1 id ="PicT">لا تنتظر الفرصة، اصنعها!</h1>
+    </div>
+
+    <div id = "MainB">
+
+        <div id = "to-do-list">
+
+            <div id = "MToDoT">
+                <h1 id ="Mham" >قائمة المهام</h1>
+            </div>
+
+            <div id = "SecondD">
+                <button id = "ButAdd">إضافة</button>
+            </div>
+
+            <!-- Begin of the To-Do Div-->
+            <div id = "ToDo1" class = "ToDoDiv">
+
+                <div>
+        
+                <input type="checkbox" class = "CheckBoxX" onchange="strikeThrough(this)">
+
+                </div>
+
+                <div>
+                    <button id ="removeBut" class ="RemoveBut">حذف</button>
+                </div>
+
+                <div>
+
+                    <input type="text" id = "name1" class = "Name">
+
+                </div>
+
+            </div>
+            <!-- End of the To-Do Div-->
+        </div>
+
+        <!--          BEGIN Div2            -->
+        <div id = "D2">
+            <h1 id ="D2T">طريقة بومودور للمذاكرة </h1>
+
+            <div id ="pomodoro">
+
+                
+                <div id = "StartDiv">
+                    <button id = "decrease">&lt </button>
+                </div>
+
+                <div id = "TimerDiv">
+                    <h1 id = "Timer"> 25:00 </h1>
+                </div>
+                
+                <div id = "AddDiv">
+                    <button id = "increase"> &gt</button>
+                </div>
+            </div>
+
+            <div id = "SSD">
+            <button id = "stop">توقف</button>
+            <button id = "start">بدء</button>
+        </div>
+
+            <p id = "pDoro">بومودور هي تقنية تساعد في 
+                تحسين عملية المذاكرة والتركيز على
+                فترات زمنية محددة. تعتمد هذه الطريقة 
+                على تقسيم المواد الدراسية إلى فترات 
+                زمنية محددة، مثل 25 دقيقة لكل فترة، 
+                وتخصيص فترات قصيرة للاستراحة بين
+                الفترات الدراسية. عند انتهاء
+                الفترة الزمنية، يتم الاستراحة
+                لمدة قصيرة، ثم يتم العودة إلى 
+                المذاكرة للفترة التالية. تساعد
+                هذه الطريقة على تحسين التركيز
+                والإنتاجية، وتخفيف الإجهاد 
+                والتعب الناتج عن فترات طويلة
+                من المذاكرة المتواصلة.
+            </p>
+        </div>
+        <!--          End Div2         -->
+        <div id ="div3">
+
+            <h1 id = "MediaPlayer">مشغل وسائط</h1>
+            <h2 id = "Mediainfo">قم بلصق رابط من اليوتيوب للإستمتاع اثناء المذاكرة </h2>
+            <input type="text" id = "MediaLink" placeholder = "ادخل الرابط">
+            <iframe id ="youtframe"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+            <button id = "Play" >تشغيل</button>
+        </div>
+
+    </div>
+</div>
+    
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
